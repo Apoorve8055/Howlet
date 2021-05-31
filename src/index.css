@@ -1,0 +1,15 @@
+
+body {  
+    color: #333; 
+    background: #fff; 
+    margin: 0;
+  }
+
+/* Set dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {  
+      color: #fff; 
+      background: #090C10;
+    }
+ 
+}
