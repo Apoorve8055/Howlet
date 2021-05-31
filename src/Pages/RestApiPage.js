@@ -1,10 +1,28 @@
 import React from 'react'
 import styled from 'styled-components';
+import Header from '../Components/Header';
+
 
 function RestApiPage() {
     return (
         <section>
-             RestApiPage
+            <Conatiner>
+               <Header pagename="REST API"/>
+                    <Layout>
+                        <article>
+                            <RequestLayout>
+                                Request
+                            </RequestLayout>
+                        </article>
+                        
+                        <article>                 
+                            <RequestLayout>
+                                Response
+                            </RequestLayout>
+                        </article>
+                    </Layout>
+            
+                    </Conatiner>
         </section>
     )
 }
@@ -12,10 +30,21 @@ function RestApiPage() {
 export default RestApiPage
 
 const Conatiner = styled.div`
-display:flex;
-justify-content:center;
-align-items:center;
-width:92vw;
-height:100vh;
+    display:flex;
+    flex-direction:column;
+`;
 
+const Layout = styled.div`
+    display:flex;
+    @media all and (max-width: 768px) { 
+        flex-direction:column;
+    }
+`;
+
+const RequestLayout = styled.div`
+    width:43vw;
+    padding:10px;
+    @media all and (max-width: 768px) { 
+        width:90vw;
+    }
 `;

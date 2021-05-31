@@ -76,6 +76,7 @@ const LinkButton = styled(Link)`
 
     &:hover .tip {
       visibility: visible;
+
     }
 
 
@@ -156,4 +157,5 @@ const TipText = styled.div`
    top:-40px;
    left:${props=>props.space - 15}px;
    }
+   
 `;

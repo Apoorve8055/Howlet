@@ -31,6 +31,15 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
   }
 
+  article{
+    background:${({ theme }) => theme.articleColor};
+    margin:10px;
+  }
+
+  span{
+    color:${props=>props.theme === 'dark'?'white':'black'};  
+  }
+
   aside{
     color:${({ theme }) => theme.text};
     background:${({ theme }) => theme.asideBGColor};
@@ -47,9 +56,8 @@ export const GlobalStyles = createGlobalStyle`
 
   section{
     display:flex;
-    justify-content:center;
-    align-items:center;
-    
+    justify-content: center;
+
     width:92vw;
     height:100vh;
 
