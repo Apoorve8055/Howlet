@@ -47,3 +47,30 @@ const RequestLayout = styled.div`
         width:90vw;
     }
 `;
+
+const RequestForm = styled.div`
+display: flex;
+justify-content: space-between;
+`;
+
+const RequestSection = styled.div`
+    width:${props=>props.wid?'60%':'20%'};
+    padding:10px 5px;
+`;
+
+const MethodSelect = styled.select`
+    width:100%;
+    height:100%;
+    text-align:center;
+`;
+
+const MethodInput = styled.input`
+    width:100%;
+    height:100%;
+    padding:10px 20px;
+`;
+
+const MethodButton = styled.button`
+    width:100%;
+    height:100%;
+`;
